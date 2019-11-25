@@ -64,13 +64,13 @@
                                             {
                                                 int contaLetra = 0; //contador para quantidade de letras
                                                 char letrasPalavra[] = palavra.toCharArray(); // Divide e converte a palavra em um array de CHAR
-                                                char letrasLista[] = linha.toCharArray(); //Divide e converte a linha em um array de CHAR
+                                                char letrasLinha[] = linha.toCharArray(); //Divide e converte a linha em um array de CHAR
                                                 
                                                 Arrays.sort(letrasPalavra); //Arruma o array da palavra digitada
-                                                Arrays.sort(letrasLista); // Arruma o array da palavra da lista
+                                                Arrays.sort(letrasLinha); // Arruma o array da palavra da lista
                                                 for(int j = 0; j < linha.length(); j++)
                                                 {
-                                                    if(letrasPalavra[j] == letrasLista[j])//Verifica se o valor das posições é igual
+                                                    if(letrasPalavra[j] == letrasLinha[j])//Verifica se o valor das posições é igual
                                                             contaLetra++;
                                                         else //sai do loop para evitar verificação desnecessária
                                                         {
@@ -81,7 +81,7 @@
                                                 if(contaLetra == linha.length())// Imprime anagrama na tela
                                                 {
                                                     //System.out.println(palavra + " e " + linha + " são anagramas. "); 
-                                                    System.out.println(linha); 
+                                                    System.out.println(linha);
                                                     contaLetra = 0;
                                                 }
                                                 
